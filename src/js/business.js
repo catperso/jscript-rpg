@@ -1,8 +1,10 @@
 export default class Character {
-  constructor(name, type, level) {
+  constructor(name, type, level, life) {
     this.name = name;
     this.type = type;
     this.level = level;
+    this.maxLife = life;
+    this.currentLife = life;
   }
 
   characterInfo() {
