@@ -16,6 +16,9 @@ export default class Character {
     return this.level;
   }
 
+  takeDamage(num) {
+    this.currentLife -= num;
+  }
 }
 
 
