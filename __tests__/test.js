@@ -16,6 +16,11 @@ describe('Character', () => {
     const myCharacter = new Character('Gandalf', 'Wizard', 9);
     expect(myCharacter.levelUp()).toEqual(10);
   });
+  test("Should have a current and max life point value", () => {
+    const myCharacter = new Character('Gandalf', 'Wizard', 9, 20);
+    expect(myCharacter.maxLife).toEqual(20);
+    expect(myCharacter.currentLife).toEqual(20);
+  });
 })
 
 
