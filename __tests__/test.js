@@ -21,7 +21,12 @@ describe('Character', () => {
     expect(myCharacter.maxLife).toEqual(20);
     expect(myCharacter.currentLife).toEqual(20);
   });
-})
+  test("Should lower a current life because of the damaging", () => {
+    const myCharacter = new Character('Gandalf', 'Wizard', 9, 20);
+    myCharacter.takeDamage(2);
+    expect(myCharacter.currentLife).toEqual(18);
+  });
+});
 
 
 
