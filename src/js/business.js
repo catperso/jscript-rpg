@@ -8,6 +8,12 @@ export default class Character {
   characterInfo() {
     return `Your character is ${this.name}, he is a great ${this.type} at level ${this.level}!`;
   }
+
+  levelUp() {
+    this.level += 1;
+    return this.level;
+  }
+
 }
 
 
